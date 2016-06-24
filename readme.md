@@ -5,7 +5,6 @@ Displaying live big XML feeds processing using Laravel5.2, Angular2, XMLParser a
   - Enter Valid XML File URL prod
   - Press "Process"
   - Magic Happens :)
-  - 
   
 ### Installation
 
@@ -19,6 +18,18 @@ Displaying live big XML feeds processing using Laravel5.2, Angular2, XMLParser a
 - Inside the laravel dir Run Command "composer install" to install laravel and required composer packages"
 - Point your browser to http://127.0.0.1/angular 
 - That's It :)
+
+### Notes
+
+- Unit testing configuration file (phpunit.xml) - 95% Code Coverage
+- Package Directory Location (packages/tradetracker/xml-parser/src)
+
+### Real-world situation
+
+In real work situation I'd fire events to push real-time data and workers to process the data feed,
+So please consider both front-end and back-end solutions as A proof of concept and not a production code (It's just a few hours task)
+
+Thanks for your understanding
 
 ### Tech
 
