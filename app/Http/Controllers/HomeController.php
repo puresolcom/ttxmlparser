@@ -58,7 +58,7 @@ class HomeController extends Controller
                         if ($this->counted >= SELF::MAX_COUNT) {
                             $parserInstance->stop();
                         }
-                        if (count($this->products) % 10 == 0) {
+                        if (count($this->products) % 5 == 0) {
                             $this->pusher->trigger('feed-reader', 'new-feed-' . trim(\Request::get('event')),
                                 $this->products);
                             $this->products = [];

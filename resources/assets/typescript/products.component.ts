@@ -50,7 +50,7 @@ export class ProductsComponent {
             data.forEach(function (product) {
                 this.totalProcessed++;
                 this.products.push(product);
-                if (this.products.length > 10) {
+                if (this.products.length >= 5) {
                     this.products.shift();
                 }
             }.bind(this));
