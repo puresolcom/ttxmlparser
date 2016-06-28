@@ -20,9 +20,14 @@ Displaying live big XML feeds processing using Laravel5.2, Angular2, XMLParser a
 - That's It :)
 
 ### Notes
+1 - Package Directory Location (packages/tradetracker/xml-parser/src)
+2 - Unit testing configuration file (phpunit.xml) - 95% Code Coverage
+3 - Angular Source files are located at "resources/assets/typescript"
+4 - Sass file "resources/assets/sass"
 
-- Unit testing configuration file (phpunit.xml) - 95% Code Coverage
-- Package Directory Location (packages/tradetracker/xml-parser/src)
+### URGENT NOTE :
+Current parser will parse only maximum of 1000 record, However to change this limitation behavior we could modify the constant value of "MAX_COUNT" located at the HomeControler.php file "ttxmlparser/app/Http/Controllers/HomeController.php"
+
 
 ### Real-world situation
 
